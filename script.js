@@ -56,4 +56,20 @@ function updateWrongLetterE1(){
         }
     });
 
+    
+    
+    if(wrongLetters.length === figureParts.length){
+        finalMessage.innerText = 'Unfortunately you lost. 😕';
+        popup.style.display = 'flex';
+    }
+
+}
+
+
+function showNotification(){
+    notification.classList.add('show');
+
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 2000);
 }
